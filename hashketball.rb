@@ -170,16 +170,27 @@ end
 def player_numbers (team_name_search)
 jer_num_arr = []
   game_hash.each do |team, team_info|
+<<<<<<< HEAD
     if team_info[:team_name] == team_name_search
       team_info[:players].each do |player|
       jer_num_arr << player [:number]
     end
   end
 end
+=======
+
+      team_info[:players].each do |player|
+    if team_info[:team_name] == team_name_search
+
+      jer_num_arr << player [:number]
+    end
+  end
+>>>>>>> 83b7e9314665dc56c34cbd481d4c1edeb68be4aa
   jer_num_arr
 end
 
 
+<<<<<<< HEAD
 def player_stats (player_search)
   game_hash.each do |team, team_info|
     team_info.each do |key, value|
@@ -207,3 +218,8 @@ def big_shoe_rebounds
     end
     return rebound_score
   end
+=======
+def big_shoe_rebounds (exe)
+
+end
+>>>>>>> 83b7e9314665dc56c34cbd481d4c1edeb68be4aa
